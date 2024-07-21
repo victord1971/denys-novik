@@ -1,0 +1,10 @@
+
+
+header {
+    display: flex;
+    align-items: center;
+    max-width: 1080px;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
