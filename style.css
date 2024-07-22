@@ -1,6 +1,10 @@
 body {
   align-items: center;
-  font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -9,6 +13,7 @@ header {
 }
 
 ul {
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -17,7 +22,16 @@ ul {
   font-family: Arial, Helvetica, sans-serif;  
 }
 
-a:hover {
+:visited {
+  color: unset;
+}
+
+header :link, header :visited {
+  text-decoration: none;
+  color: rgb(191, 191, 191);
+}
+
+header a:hover {
   background-color: black;
 }
 
@@ -32,7 +46,7 @@ h1 {
   margin: auto;
 }
 
-img {
+section:not(.skills) img {
   display: block;
 }
 
@@ -49,15 +63,63 @@ h2 {
   margin: 0;
 }
 
-:link, :visited {
-  text-decoration: none;
-  color: rgb(191, 191, 191);
+.skills {
+  padding: 100px;
+  text-align: center;
 }
 
-/*.hero h2 {
-  align-self: center;
+.skills h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
 }
-.hero p {
-  font-size: 10px;
-  width: 512px;
-}*/
+
+.skills h4 {
+  color: #828282;
+  font-size: 14px;
+  height: 33px;
+}
+
+.skills li:last-child h4 {
+  line-height: 33px;
+}
+
+.stars {
+  display: flex;
+}
+
+.portfolio {
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 100px;
+}
+
+.portfolio ul {
+  display: unset;
+}
+
+.portfolio img {
+  margin: 70px auto 40px;
+
+}
+
+footer {
+  text-align: center;
+  padding: 100px;
+}
+
+footer button {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 60px auto 30px;
+}
+
+footer p:last-child {
+  color: #828282;
+  font-size: 14px;
+}
