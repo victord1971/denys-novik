@@ -1,15 +1,14 @@
 
 
 body {
+  max-width: 1080px;
+  align-items: center;
   font-family: "Titillium Web", Arial, Helvetica, sans-serif;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    max-width: 1080px;
-    justify-content:center;
     margin: auto;
+    display: flex;
   }
 
   ul {
@@ -21,25 +20,30 @@ header {
     gap: 50px;
     font-family: Arial, Helvetica, sans-serif;
   }
+
   h1 {
     font-size: 30px;
     vertical-align: 0%;
   }
+  
 :link, :visited {
   text-decoration: none;
   color: #7D7D7D;
 
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  width: 1200px;
-  padding-left: 55px;
-  margin: auto;
+hero {
+  background: #F6F6F6;
+  text-align: center;
 }
 
+h2 {
+}
+
+/*.hero h2 {
+  align-self: center;
+}
 .hero p {
   font-size: 10px;
   width: 512px;
-}
+}*/
